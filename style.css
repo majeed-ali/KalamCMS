@@ -1,0 +1,111 @@
+/*****************
+    1) GENERAL
+*****************/
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    overflow-x: hidden;
+    width: 100%;
+}
+body{
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.btn{
+    border-radius: 30px;
+}
+.f-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.f-big{
+    font-size: 60px;
+}
+.f-mid{
+    font-size: 1.4rem;
+}
+
+.thin{
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 680px) {
+    .f-title{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .f-big{
+        font-size: 40px;
+    }
+    .f-mid{
+        font-size: 1.1rem;
+    }
+    
+    .thin{
+        font-weight: 300;
+    }
+  }
+
+.card {
+    box-shadow: 2px 2px 2px;
+}
+
+a{
+    color:aliceblue;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.navbar-light .navbar-toggler{
+    border-color: transparent !important;
+}
+
+.list-group .active{
+    background-color: #FFC107;
+    outline-color: #FFC107;
+}
+
+.breadcrumb{
+    background-color: #fff;
+    padding-left:0px;
+    padding-bottom: 10px;
+    margin:0px;
+}
+
+.breadcrumb a{
+    color: #2F2C79;
+}
+.breadcrumb a:hover{
+    color: #FCB800;
+}
+
+/********************
+    2) Hero Section
+********************/
+#hero{
+    /* The image used */
+    background-image: url("image/white-tech.jpg");
+
+    /* Set a specific height */
+    min-height: 800px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
