@@ -29,8 +29,33 @@ body{
     font-size: 1.4rem;
 }
 
+.fw-5{
+    font-weight: 500;
+}
+.fw-6{
+    font-weight: 600;
+}
+.fw-7{
+    font-weight: 700;
+}
+.fw-8{
+    font-weight: 800;
+}
+
 .thin{
     font-weight: 300;
+}
+
+.vl {
+  border-right: 3px solid rgb(84, 85, 84);
+  /* height: 500px; */
+}
+
+@media only screen and (max-width: 800px) {
+    .vl {
+        border-right: none;
+        /* height: 500px; */
+      }
 }
 
 @media only screen and (max-width: 680px) {
@@ -108,4 +133,8 @@ a:hover{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#short-intro{
+    background-color: antiquewhite;
 }

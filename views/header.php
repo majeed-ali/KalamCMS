@@ -63,7 +63,7 @@
 </head>
 <body>
  
-<header>
+<header class="sticky-top">
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="/">LOGO</a>

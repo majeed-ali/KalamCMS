@@ -89,5 +89,14 @@ else
     $os = 'UnKnown OS';
 }
 
+function the_title()
+{
+    echo 'Title of the Page';
+}
+
+function the_content()
+{
+    echo 'content of the Page';
+}
 ?>
 

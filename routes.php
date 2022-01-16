@@ -33,6 +33,10 @@ get('/visitors', 'views/ovc/counter.php');
 get('/tool/$toolname', 'views/all-tools.php');
 post('/processdata', 'modules/actions.php');
 
+get('/page/$pagename', 'views/page.php');
+
+get('/blog/$blogname', 'views/blog.php');
+
 // Dynamic GET. Example with 1 variable and 1 query string
 // In the URL -> http://localhost/item/car?price=10
 // The $name will be available in items.php which is inside the views folder
