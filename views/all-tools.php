@@ -56,8 +56,7 @@
                         <p><?php the_content(); ?></p>
                     </div>
                     <div class="card p-4 m-2">
-                        <form name="convert-case">
-                            <?php set_csrf() ?>
+                       
                             <textarea id="txt-convert-case" name="txt-convert-case" class="form-control shadow-sm" rows="5" placeholder="Type something here"></textarea>
 
                             <div class="py-2">
@@ -66,7 +65,7 @@
                                 <button name="titlecase" id="titlecase" class="btn btn-info" onclick=""><i class="fas fa-text-height"></i> Title Case</button>
                                 <button name="reset" class="btn btn-danger" type="reset"><i class="fas fa-sync-alt"></i>  RESET</button>
                             </div>
-                        </form>
+                       
                     </div>
                     <?php } ?>
                 </div>
