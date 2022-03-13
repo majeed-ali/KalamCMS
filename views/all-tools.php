@@ -56,17 +56,26 @@
                         <p><?php the_content(); ?></p>
                     </div>
                     <div class="card p-4 m-2">
-                       
-                            <textarea id="txt-convert-case" name="txt-convert-case" class="form-control shadow-sm" rows="5" placeholder="Type something here"></textarea>
-
+                        <textarea id="txt-convert-case" name="txt-convert-case" class="form-control shadow-sm" rows="5" placeholder="Type something here"></textarea>
                             <div class="py-2">
                                 <button name="upper" id="upper" class="btn btn-success" ><i class="far fa-arrow-alt-circle-up"></i>  UPPER CASE</button>
                                 <button name="lower" id="lower" class="btn btn-primary" ><i class="far fa-arrow-alt-circle-down"></i>  lower case</button>
                                 <button name="titlecase" id="titlecase" class="btn btn-info" onclick=""><i class="fas fa-text-height"></i> Title Case</button>
-                                <button name="reset" class="btn btn-danger" type="reset"><i class="fas fa-sync-alt"></i>  RESET</button>
+                                <button name="reset" id="reset-txt-convert-case" class="btn btn-danger"><i class="fas fa-sync-alt"></i>  RESET</button>
                             </div>
-                       
                     </div>
+                    <?php } elseif($toolname == 'character-word-count-tool'){ ?>
+                        <div class="py-3">
+                            <h1><?php the_title(); ?></h1>
+                            <p><?php the_content(); ?></p>
+                        </div>
+                        <div class="card p-4 m-2">
+                        <h5 id="cc_data">Total Characters: <mark>[0]</mark>, Total Words: <mark>[0]</mark> and Line Count: <mark>[0]</mark></h5>
+                            <textarea id="word-count" name="word-count" class="form-control shadow-sm" rows="5" placeholder="Type something here"></textarea>
+
+                            <button type="reset-word-count" id="reset-word-count" class="btn btn-danger btn-block mt-2"><i class="fas fa-sync mr-2"></i> Reset</button>
+                        </div>
+                        
                     <?php } ?>
                 </div>
                 <!--************ SIDEBAR ************* -->

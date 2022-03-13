@@ -17,6 +17,26 @@ $("#titlecase").click(function() {
     $("#txt-convert-case").val(result);
 });
 
+$("#reset-txt-convert-case").click(function() {
+    $('#txt-convert-case').val('');
+});
+
+/********************** */
+
+$('#word-count').keyup(function() {
+    var len = $(this).val().length;
+    var txt = $(this).val().match(/\S+/g).length;
+    var lin = $(this).val().split(/\r*\n/).length;
+    var ch = len;
+    var wc = txt;
+    var lc = lin;
+    $('#cc_data').html('Total Characters: <mark>[<span class="number">' + ch + '</span>]</mark>, Total Words: <mark>[<span class="number">' + wc + '</span>]</mark> and Line Count: <mark>[<span class="number">' + lc + '</span>]</mark>');
+    $(".number").formatNumber();
+});
+
+$("#reset-word-count").click(function() {
+    $('#word-count').val('');
+});
 /********************** */
 
 function insert(num) {
@@ -245,16 +265,6 @@ $(document).ready(function() {
     });
     /******************** */
 
-    $('#uInput').keyup(function() {
-        var len = $(this).val().length;
-        var txt = $(this).val().match(/\S+/g).length;
-        var lin = $(this).val().split(/\r*\n/).length;
-        var ch = len;
-        var wc = txt;
-        var lc = lin;
-        $('#cc_data').html('Total Characters: <mark>[<span class="number">' + ch + '</span>]</mark>, Total Words: <mark>[<span class="number">' + wc + '</span>]</mark> and Line Count: <mark>[<span class="number">' + lc + '</span>]</mark>');
-        $(".number").formatNumber();
-    });
     $("#celsius").keyup(function() {
         var inputdata = $("#celsius").val();
         var calculat = ((9 / 5) * inputdata + 32);
