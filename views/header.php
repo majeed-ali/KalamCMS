@@ -77,25 +77,25 @@
               <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/projects">Projects</a>
+              <a class="nav-link" href="<?php get_url();?>/projects">Projects</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/tools" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="<?php get_url();?>/tools" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                 Tools
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="tool/text-to-speech-converter"><i class="fas fa-language"></i> Text to Speech Converter (TTS)</a>
-                <a class="dropdown-item" href="tool/online-image-converter"><i class="far fa-image"></i> Image Converter</a>
+                <a class="dropdown-item" href="<?php get_url();?>/tool/text-to-speech-converter"><i class="fas fa-language"></i> Text to Speech Converter (TTS)</a>
+                <a class="dropdown-item" href="<?php get_url();?>/tool/online-image-converter"><i class="far fa-image"></i> Image Converter</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="tool/ip-lookup"><i class="fas fa-search-location"></i> IP Lookup</a>
-                <a class="dropdown-item" href="tool/json-schema-generator"><i class="fas fa-database"></i> J-SON Schema Generator</a>
-                <a class="dropdown-item" href="tool/unit-converter"><i class="fas fa-vial"></i> Unit Converter</a>
+                <a class="dropdown-item" href="<?php get_url();?>/tool/ip-lookup"><i class="fas fa-search-location"></i> IP Lookup</a>
+                <a class="dropdown-item" href="<?php get_url();?>/tool/json-schema-generator"><i class="fas fa-database"></i> J-SON Schema Generator</a>
+                <a class="dropdown-item" href="<?php get_url();?>/tool/unit-converter"><i class="fas fa-vial"></i> Unit Converter</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="tool/text-case-converter"><i class="fas fa-text-height"></i> Text Case Converter</a>
-                <a class="dropdown-item" href="tool/character-word-count-tool"><i class="fas fa-stopwatch-20"></i> Character Word Count Tool</a>
-                <a class="dropdown-item" href="tool/find-and-replace"><i class="fas fa-search"></i> Find & Replace</a>
+                <a class="dropdown-item" href="<?php get_url();?>/tool/text-case-converter"><i class="fas fa-text-height"></i> Text Case Converter</a>
+                <a class="dropdown-item" href="<?php get_url();?>/tool/character-word-count-tool"><i class="fas fa-stopwatch-20"></i> Character Word Count Tool</a>
+                <a class="dropdown-item" href="<?php get_url();?>/tool/find-and-replace"><i class="fas fa-search"></i> Find & Replace</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/tools"><i class="fas fa-ellipsis-v"></i> More tools &raquo</a>
+                <a class="dropdown-item" href="<?php get_url();?>/tools"><i class="fas fa-ellipsis-v"></i> More tools &raquo</a>
               </div>
             </li>
             <li class="nav-item">
