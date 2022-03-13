@@ -46,9 +46,47 @@
                     </div>
                 <?php } 
                 //************** FIND AND REPLACE TOOL **************/
-                elseif($toolname == 'find-and-replace') {
-                    echo 'Find and replace';
-                } 
+                elseif($toolname == 'find-and-replace') { ?>
+                    <form name="frm" class="border p-4 rounded bg-light mb-4 shadow">
+                        <h3>Input Data <span class="text-danger">*</span></h3>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="7" required="" placeholder="Type or paste your content here..." id="uInput"></textarea>
+                        </div>
+                        <h3>Output Data</h3>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="7" required="" placeholder="Results will be shown here...." id="uOutput"></textarea>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-light" data-toggle="collapse" data-target="#fnr"><b>Find &amp; Replace Options</b> (<i>Click to collapse</i>)</div>
+                            <div id="fnr" class="">
+                                <div class="card-body">
+                                    <div id="TextBoxesGroup" class="form-group show">
+                                        <div id="TextBoxDiv1" class="row mb-3">
+                                            <label class="col-lg-2 col-form-label">Find #1</label>
+                                            <div class="col-lg-4"><input type="text" class="border rounded input-sm pl-1" placeholder="Find #1" id="findbox1"></div>
+                                            <label class="col-lg-2 col-form-label">Replace #1</label>
+                                            <div class="col-lg-4"><input type="text" class="border rounded input-sm pl-1" placeholder="Replace #1" id="replacebox1"></div>
+                                        </div>
+                                        <div id="TextBoxDiv2" class="row mb-3">
+                                            <label class="col-lg-2 col-form-label">Find #2</label>
+                                            <div class="col-lg-4"><input type="text" class="border rounded input-sm pl-1" placeholder="Find #2" id="findbox2"></div>
+                                            <label class="col-lg-2 col-form-label">Replace #2</label>
+                                            <div class="col-lg-4"><input type="text" class="border rounded input-sm pl-1" placeholder="Replace #2" id="replacebox2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-lg-4"><button type="button" id="addbtn" class="btn btn-success btn-block"><i class="fas fa-plus mr-2"></i> Add Element</button></div>
+                                        <div class="form-group col-lg-4"><button type="button" id="repbtn" class="btn btn-danger btn-block"><i class="fas fa-trash-alt mr-2"></i> Remove Element</button></div>
+                                        <div class="form-group col-lg-4"><button type="reset" id="reset" class="btn btn-warning btn-block"><i class="fas fa-sync mr-2"></i> Reset</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-12"><button type="button" id="fnrbtn" class="btn btn-primary btn-lg btn-block"><i class="fas fa-pen mr-2"></i> Find &amp; Replace</button></div>
+                        </div>
+                        </form>
+                <?php } 
                 //************** TEXT CASE CONVERTOR **************/
                 elseif($toolname == 'text-case-converter') {?>
                     <div class="py-3">
@@ -75,7 +113,6 @@
 
                             <button type="reset-word-count" id="reset-word-count" class="btn btn-danger btn-block mt-2"><i class="fas fa-sync mr-2"></i> Reset</button>
                         </div>
-                        
                     <?php } ?>
                 </div>
                 <!--************ SIDEBAR ************* -->
